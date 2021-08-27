@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+  --background: hsl(225, 100%, 94%);
+  --titulo: hsl(223, 47%, 23%);
+  --fundinho: hsl(225, 100%, 98%);
+  --azul-forte: hsl(245, 75%, 52%);
+  --azul-fraquin: hsl(224, 23%, 55%);
+  --azul-botao: hsl(245, 100%, 65%);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-image: url(/img/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--background);
+  background-size: 100%;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* TOP */
+
+.container {
+  width: 350px;
+  margin: 6% auto;
+  border-radius: 5%;
+  background-color: white;
+}
+
+.girl figure img {
+  width: 100%;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+.titulo {
+  margin-top: 30px;
+  color: var(--titulo)
+}
+
+.titulo h2 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.descricao {
+  padding: 25px;
+}
+
+.descricao p {
+  font-size: 15px;
+  color: var(--azul-fraquin);
+}
+
+/* MIDDLE */
+
+.tudo {
+  padding: 6px;
+  background-color: var(--fundinho);
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.imagem {
+  margin-right: 10px;
+}
+
+.plano {
+  display: inline-block;
+}
+
+.plano h2 {
+  color: var(--titulo);
+  font-weight: 900;
+}
+
+.plano p {
+  color: var(--azul-fraquin);
+}
+
+.tudo a {
+  float: right;
+  margin: 15px 5px 0 0;
+  font-size: 14px;
+}
+
+/* FOOTER */
+
+.botao {
+  margin: 10px 0 10px 0;
+  font-size: 14px;
+}
+
+button {
+  color: white;
+  background-color: var(--azul-forte);
+  padding: 15px 50px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 6px 10px grey;
+  transition: 1s;
+}
+
+button:hover{
+  background-color: var(--azul-botao);
+  cursor: pointer;
+}
+
+.cancelar {
+  padding-bottom: 20px;
+}
+
+.cancel {
+  text-decoration: none;
+  color: var(--azul-fraquin);
+}
+
+@media only screen and (max-width: 470px){
+  body{
+    background-image: url(/img/pattern-background-mobile.svg);
+    background-size: 100%;
+  }
+
+  .container{
+    width: 90%;
+  }
+}
